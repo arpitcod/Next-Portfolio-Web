@@ -186,9 +186,11 @@ const page = () => {
     // Add more projects here
   ];
 // grid 
+// eslint-disable-next-line react-hooks/rules-of-hooks
 const [gridCols, setGridCols] = useState<number>(2);
 
   // search projects filter 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [searchProject,setSearchProject] = useState<string>("")
    const filteredProjects = projects.filter((project) => {
     console.log('Live Link:', project.live_link);

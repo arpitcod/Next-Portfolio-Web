@@ -44,7 +44,7 @@ const HomePage = () => {
             </div>
 
             <div className="custom_card about_card flex justify-center">
-              <img
+              <Image
                 src="/images/krishna.jpg"
                 alt="krishna"
                 className="rounded-xl border border-white"
