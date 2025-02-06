@@ -279,7 +279,7 @@ const [gridCols, setGridCols] = useState<number>(2);
                     {/* profile logo  */}
                     <div className=" w-24 p-1 ">
                       <Image
-                        src={project.image}
+                        src={project?.image}
                         alt={project.title}
                         className="rounded-full w-full  object-cover"
                       />
