@@ -288,7 +288,7 @@ const [gridCols, setGridCols] = useState<number>(2);
                     {/* profile text  */}
                     <div className=" flex flex-col gap-1 w-full ">
                       
-                      <p className="text-lg sm:text-xl font-bold">{project.title}</p>
+                      <p className="text-lg sm:text-xl font-bold text-gray-800">{project.title}</p>
                       <Link
                         href={project.repo_link}
                         className="text-xs sm:text-sm text-gray-500 font-bold underline"
