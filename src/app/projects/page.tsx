@@ -282,7 +282,7 @@ const [gridCols, setGridCols] = useState<number>(2);
                     <div className=" w-24 p-1 ">
                       <Image
                         src={`./krishna.jpg`}
-                        alt={project.title}
+                        alt={""}
                         className="rounded-full w-full  object-cover"
                       />
                     </div>
