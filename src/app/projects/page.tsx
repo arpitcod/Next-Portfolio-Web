@@ -1,4 +1,5 @@
-"use client"
+'use client';
+import Image from "next/image";
 import Link from "next/link";
 // import { title } from 'process';
 import React, { useState } from "react";
@@ -274,9 +275,9 @@ const [gridCols, setGridCols] = useState<number>(2);
                   <div className=" p-1 flex flex-col sm:flex-row  gap-2">
                     {/* profile logo  */}
                     <div className=" w-24 p-1 ">
-                      <image
-                        href={project.image}
-                        // alt={project.title}
+                      <Image
+                        src={project.image}
+                        alt={project.title}
                         className="rounded-full w-full  object-cover"
                       />
                     </div>

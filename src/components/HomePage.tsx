@@ -3,6 +3,7 @@ import React from "react";
 // import { useState } from "react";
 import "@/css/homePage.css";
 import Link from "next/link";
+import Image from "next/image";
 const HomePage = () => {
   // const [darkMode, setDarkMode] = useState(false);
 
@@ -27,10 +28,11 @@ const HomePage = () => {
         {/* <SideBar/> */}
 
         {/* Main Content */}
-        <main className="content_container min-h-screen flex-1 p-6 flex flex-col items-center justify-center border border-black p-2">
+        {/* <main className="content_container min-h-screen flex-1 p-6 flex flex-col items-center justify-center border border-black p-2"> */}
+        <main className="content_container min-h-screen flex-1 flex flex-col items-center justify-center border border-black p-2">
           <header className="header w-full max-w-4xl text-center mb-10">
             <p className="title text-4xl font-bold">
-            Hi, I'm Arpit
+            {`Hi, I'm Arpit`}
             </p>
             <p className="subtitle text-4xl font-bold mt-2">Full Stack Developer</p>
           </header>
@@ -42,7 +44,7 @@ const HomePage = () => {
             </div>
 
             <div className="custom_card about_card flex justify-center">
-              <img
+              <Image
                 src="/images/krishna.jpg"
                 alt="krishna"
                 className="rounded-xl border border-white"
