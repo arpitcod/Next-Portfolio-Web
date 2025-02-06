@@ -1,0 +1,61 @@
+:root {
+    --text-light: #000000;
+    --bg-dark: #1a202c;
+    /* --text-dark: #ffffff; */
+    --primary-color: #facc15;
+    --secondary-color: #3b82f6;
+
+    /* background  */
+    --bg-white: #ffffff;
+    --bg-dark-teal:#15616D;
+
+    /* text  */
+    --text-dark-teal:#15616D;
+    --text-white:#ffffff;
+
+    /* border radius  */
+    --border-radius-5:5px;
+    --border-radius-10:10px;
+    --border-radius-15:15px;
+    --border-radius-20:20px;
+
+  }
+
+/* .sideber_nav{
+    border: 1px solid white;
+} */
+
+.main_home_container{
+  background-color: var(--bg-white);
+  border-top-left-radius: var(--border-radius-20);
+  border-bottom-left-radius: var(--border-radius-20);
+  overflow: auto;
+}
+
+.home_container{
+    /* width: 80%; */
+    background-color: var(--bg-white);
+}
+
+.content_container{
+    border-radius: var(--border-radius-10);
+    background-color: var(--bg-dark-teal);
+}
+
+.custom_card img {
+    width: 40%;
+}
+
+.content_area{
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius-10);
+}
+
+.card_title{
+    color: var(--text-dark-teal);
+}
+.home_btns{
+    background-color: var(--bg-white);
+    color: var(--text-dark-teal);
+    border-radius: var(--border-radius-10);
+}
