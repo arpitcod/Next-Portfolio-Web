@@ -264,6 +264,7 @@ const [gridCols, setGridCols] = useState<number>(2);
                 
             `}
           >
+            
             {
             filteredProjects.length > 0 ?(
               
