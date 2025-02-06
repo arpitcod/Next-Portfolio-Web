@@ -174,14 +174,15 @@ const page = () => {
       live_link: "https://gsapscrollanimate.vercel.app/",
     },
     {
-      title: "next-portfolio-website",
+      title: "Next-Portfolio-Web",
       image: "https://avatars.githubusercontent.com/u/176493638?v=4",
       description: "my portfolio my all projects and details",
       technologies: ["next js", "typescript"],
       repo_link:
-        "https://github.com/arpitcode2914/Ts-Practise/tree/main/Mail-sender-app",
-      // live_link: "https://gsapscrollanimate.vercel.app/",
+        "https://github.com/arpitcod/Next-Portfolio-Web",
+      live_link: "https://next-portfolio-web-pi.vercel.app/",
     },
+   
 
     // Add more projects here
   ];
