@@ -32,7 +32,7 @@ const page = () => {
           </div>
           <div>
             <label className="block text-gray-700">Message</label>
-            <textarea className="w-full p-2 border border-gray-300 rounded-lg" rows="4" placeholder="Your Message" required></textarea>
+            <textarea className="w-full p-2 border border-gray-300 rounded-lg" placeholder="Your Message" required></textarea>
           </div>
           <button type="submit" className="content_btn w-full  text-white py-2 rounded-lg shadow-md ">Send Message</button>
         </form>

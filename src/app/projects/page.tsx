@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Link from "next/link";
 // import { title } from 'process';
 import React, { useState } from "react";
@@ -188,7 +188,7 @@ const page = () => {
 const [gridCols, setGridCols] = useState<number>(2);
 
   // search projects filter 
-  const [searchProject,setSearchProject] = useState("")
+  const [searchProject,setSearchProject] = useState<string>("")
    const filteredProjects = projects.filter((project) => {
     console.log('Live Link:', project.live_link);
     return (
@@ -274,9 +274,9 @@ const [gridCols, setGridCols] = useState<number>(2);
                   <div className=" p-1 flex flex-col sm:flex-row  gap-2">
                     {/* profile logo  */}
                     <div className=" w-24 p-1 ">
-                      <img
-                        src={project.image}
-                        alt={project.title}
+                      <image
+                        href={project.image}
+                        // alt={project.title}
                         className="rounded-full w-full  object-cover"
                       />
                     </div>
