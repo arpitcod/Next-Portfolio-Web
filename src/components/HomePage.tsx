@@ -38,7 +38,7 @@ const HomePage = () => {
 
           <section className="content_area border border-white p-2 flex sm:flex-row flex-col gap-3">
             <div className="custom_card project_card flex items-center ml-5">
-              <p className="card_title text-4xl font-semibold text-center sm:text-left ">
+              <p className="card_title text-lg sm:text-4xl font-semibold text-center sm:text-left ">
                 Arpit | Full Stack Developer | Problem Solver | Passionate Coder
                 🚀
               </p>
