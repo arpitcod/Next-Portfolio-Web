@@ -311,7 +311,7 @@ const [gridCols, setGridCols] = useState<number>(1);
                               <FaExternalLinkAlt className="text-gray-800"/>
                               <Link
                                 href={project.live_link}
-                                className="text-base text-blue-700 font-bold underline"
+                                className="text-xs sm:text-sm text-blue-700 font-bold underline"
                                 target="_blank"
                               >
                                 Live link
