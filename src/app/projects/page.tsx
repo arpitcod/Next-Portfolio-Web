@@ -305,9 +305,10 @@ const [gridCols, setGridCols] = useState<number>(1);
                       </div>
                       {/* <Link href={project.repo_link} className='text-base text-gray-500 font-bold' target='_blank'>{project.repo_link}</Link> */}
                         <div>
-                          <div className="flex items-center gap-2">
-                          <FaExternalLinkAlt className="text-gray-800"/>
+                          
                             {project.live_link ? (
+                            <div className="flex items-center gap-2">
+                              <FaExternalLinkAlt className="text-gray-800"/>
                               <Link
                                 href={project.live_link}
                                 className="text-base text-blue-700 font-bold underline"
@@ -315,12 +316,12 @@ const [gridCols, setGridCols] = useState<number>(1);
                               >
                                 Live link
                               </Link>
+                            </div>
                             ) : (
                               <p className="text-base text-gray-500 font-bold">none</p>
                             )}
 
                           </div>
-                        </div>
                       {/* <p className='text-base text-gray-500 font-bold'>{project.repo_link}</p> */}
                       {/* <p className='text-base text-blue-700 font-bold'> {true && (project.live_link)}</p> */}
                     </div>
