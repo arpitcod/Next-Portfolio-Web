@@ -1,6 +1,8 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
+import { CiLinkedin } from 'react-icons/ci'
+import { FaGithub } from 'react-icons/fa'
 
 const page = () => {
   return (
@@ -11,11 +13,17 @@ const page = () => {
         
         {/* Contact Information */}
         <div className="mb-6 text-center">
-          <p className="text-gray-600">Email: <a href="mailto:your.email@example.com" className="text-blue-600">arpitpanchal2914@gmail.com</a></p>
-          <p className="text-gray-600">Phone: <a href="tel:+1234567890" className="text-blue-600">+1234567890</a></p>
+          <p className="text-gray-800">Email: <a href="mailto:your.email@example.com" className="text-blue-600">arpitpanchal2914@gmail.com</a></p>
+          <p className="text-gray-800">Phone: <a href="tel:+1234567890" className="text-blue-600">+1234567890</a></p>
           <div className="flex justify-center space-x-4 mt-2">
-            <Link href="https://www.linkedin.com/in/arpit-panchal-2528b5280/" target='_blank' className="text-blue-600 hover:underline font-semibold">LinkedIn</Link>
-            <Link href="https://github.com/arpitcod" target='_blank' className="text-gray-800 hover:underline font-semibold">GitHub</Link>
+            <div className='flex items-center gap-1'>
+                <CiLinkedin className='text-blue-500 text-2xl'/>
+                <Link href="https://www.linkedin.com/in/arpit-panchal-2528b5280/" target='_blank' className="text-blue-600 hover:underline font-semibold">LinkedIn</Link>
+            </div>
+            <div className='flex items-center gap-1'>
+              <FaGithub className='text-gray-800'/>
+              <Link href="https://github.com/arpitcod" target='_blank' className="text-gray-800 hover:underline font-semibold">GitHub</Link>
+            </div>
             {/* <Link href="#" target='_blank' className="text-blue-400 hover:underline">Twitter</Link> */}
           </div>
         </div>

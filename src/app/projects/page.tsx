@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 // import { title } from 'process';
 import React, { useState } from "react";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 
 type Projects = {
@@ -188,7 +189,7 @@ const page = () => {
   ];
 // grid 
 // eslint-disable-next-line react-hooks/rules-of-hooks
-const [gridCols, setGridCols] = useState<number>(2);
+const [gridCols, setGridCols] = useState<number>(1);
 
   // search projects filter 
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -278,36 +279,48 @@ const [gridCols, setGridCols] = useState<number>(2);
                 >
                   <div className=" p-1 flex flex-col sm:flex-row  gap-2">
                     {/* profile logo  */}
-                    <div className=" w-24 p-1 ">
+                    <div className=" w-20 p-1 sm:24">
                       <Image
                         src="/krishna.jpg"
                         alt={project.title}
                         className="rounded-full w-full  object-cover"
+                        width={50}
+                        height={50}
                       />
                     </div>
                     {/* profile text  */}
                     <div className=" flex flex-col gap-1 w-full ">
                       
-                      <p className="text-lg sm:text-xl font-bold text-gray-800">{project.title}</p>
-                      <Link
-                        href={project.repo_link}
-                        className="text-xs sm:text-sm text-gray-500 font-bold underline"
-                        target="_blank"
-                      >
-                        {project.repo_link}
-                      </Link>
-                      {/* <Link href={project.repo_link} className='text-base text-gray-500 font-bold' target='_blank'>{project.repo_link}</Link> */}
-                      {project.live_link ? (
+                      <p className="text-lg sm:text-2xl font-bold text-gray-800">{project.title}</p>
+                      <div className="flex items-center ">
+                        <FaGithub className="text-gray-800"/> :
+
                         <Link
-                          href={project.live_link}
-                          className="text-base text-blue-700 font-bold underline"
+                          href={project.repo_link}
+                          className="text-xs sm:text-sm text-blue-700 font-bold underline"
                           target="_blank"
                         >
-                          Live link
+                          {project.repo_link}
                         </Link>
-                      ) : (
-                        <p className="text-base text-gray-500 font-bold">none</p>
-                      )}
+                      </div>
+                      {/* <Link href={project.repo_link} className='text-base text-gray-500 font-bold' target='_blank'>{project.repo_link}</Link> */}
+                        <div>
+                          <div className="flex items-center gap-2">
+                          <FaExternalLinkAlt className="text-gray-800"/>
+                            {project.live_link ? (
+                              <Link
+                                href={project.live_link}
+                                className="text-base text-blue-700 font-bold underline"
+                                target="_blank"
+                              >
+                                Live link
+                              </Link>
+                            ) : (
+                              <p className="text-base text-gray-500 font-bold">none</p>
+                            )}
+
+                          </div>
+                        </div>
                       {/* <p className='text-base text-gray-500 font-bold'>{project.repo_link}</p> */}
                       {/* <p className='text-base text-blue-700 font-bold'> {true && (project.live_link)}</p> */}
                     </div>
