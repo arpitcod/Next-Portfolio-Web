@@ -17,7 +17,8 @@ const HomePage = () => {
   //   };
 
   // pdf path ============================================================
-  const pdfPath = "/pdf/Arpit_MERN_STACK.pdf";
+  const pdfPath = "/pdf/Arpit-Full-Stack-Resume.pdf";
+  // const pdfPath = "/pdf/Arpit_MERN_STACK.pdf";
 
   return (
     <>
