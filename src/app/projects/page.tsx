@@ -213,17 +213,17 @@ const [gridCols, setGridCols] = useState<number>(1);
   // }
   
   return (
-    <div className="main_projects_container w-full">
-      <div className="projects_box overflow-y-scroll h-screen flex justify-center p-6 border border-white">
+    <div className="main_projects_container w-full ">
+      <div className="projects_box overflow-y-scroll h-screen flex justify-center p-6 border dark:bg-gray-900">
         {/* <div className="border border-black">
           <p>search bar</p>
         </div> */}
         <div className=" max-w-5xl w-full">
           {/* search input  */}
-          <div className="search_input_box flex items-center bg-white rounded-md">
-              <IoSearch className="text-2xl ml-2 text-gray-700"/>
+          <div className="search_input_box flex items-center bg-white rounded-md dark:bg-gray-700">
+              <IoSearch className="text-2xl ml-2 text-gray-700 dark:text-gray-100"/>
               <input type="text" 
-                className="w-full p-3 outline-none rounded-md text-gray-700"
+                className="w-full p-3 outline-none rounded-md text-gray-700 dark:bg-gray-700 dark:text-gray-100"
                 placeholder="search project..."
                 value={searchProject}
                 onChange={(e) =>setSearchProject(e.target.value)}
@@ -275,7 +275,7 @@ const [gridCols, setGridCols] = useState<number>(1);
               filteredProjects.map((project, index) => (
                 <div
                   key={index}
-                  className="bg-white shadow-lg rounded-2xl p-3 my-2 mx-2"
+                  className="bg-white shadow-lg rounded-2xl p-3 my-2 mx-2 dark:bg-gray-800"
                 >
                   <div className=" p-1 flex flex-col sm:flex-row  gap-2">
                     {/* profile logo  */}
@@ -291,16 +291,18 @@ const [gridCols, setGridCols] = useState<number>(1);
                     {/* profile text  */}
                     <div className=" flex flex-col gap-1 w-full ">
                       
-                      <p className="text-lg sm:text-2xl font-bold text-gray-800">{project.title}</p>
-                      <div className="flex items-center ">
-                        <FaGithub className="text-gray-800"/> :
+                      <p className="text-lg sm:text-2xl font-bold text-gray-800 dark:text-white">{project.title}</p>
+                      <div className="flex items-center gap-1">
+                        <FaGithub className="text-gray-800 dark:text-white"/> :
 
                         <Link
                           href={project.repo_link}
-                          className="text-xs sm:text-sm text-blue-700 font-bold underline"
+                          className="text-xs sm:text-sm text-blue-700 dark:text-blue-400 font-bold underline"
                           target="_blank"
                         >
-                          {project.repo_link}
+                          {
+                            project.repo_link.slice(0, 40) + ("...")
+                          }
                         </Link>
                       </div>
                       {/* <Link href={project.repo_link} className='text-base text-gray-500 font-bold' target='_blank'>{project.repo_link}</Link> */}
@@ -308,10 +310,10 @@ const [gridCols, setGridCols] = useState<number>(1);
                           
                             {project.live_link ? (
                             <div className="flex items-center gap-2">
-                              <FaExternalLinkAlt className="text-gray-800"/>
+                              <FaExternalLinkAlt className="text-gray-800 dark:text-white"/>
                               <Link
                                 href={project.live_link}
-                                className="text-xs sm:text-sm text-blue-700 font-bold underline"
+                                className="text-xs sm:text-sm text-blue-700 dark:text-blue-400 font-bold underline"
                                 target="_blank"
                               >
                                 Live link
@@ -328,14 +330,14 @@ const [gridCols, setGridCols] = useState<number>(1);
                   </div>
   
                   {/* details  */}
-                  <div className="tech_box  mt-3 p-3">
-                    <p className="font-semibold text-gray-700">
+                  <div className="tech_box  mt-3 p-3 dark:bg-gray-700">
+                    <p className="font-semibold text-gray-700 dark:text-white">
                       {project.technologies.join(", ")}
                       {/* {project.technologies.toString()} */}
                     </p>
                   </div>
-                  <div className="desc_box  mt-3 p-3">
-                    <p className="font-semibold text-gray-700">{project.description}</p>
+                  <div className="desc_box  mt-3 p-3 dark:bg-gray-700">
+                    <p className="font-semibold text-gray-700 dark:text-white">{project.description}</p>
                   </div>
                 </div>
               ))
