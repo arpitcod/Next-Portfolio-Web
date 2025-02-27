@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const HomePage = () => {
-  const pdfPath = "/pdf/Arpit-Full-Stack-Resume.pdf";
+  const pdfPath = "/pdf/Arpit-FullStack-Resume.pdf";
 
   return (
     <div className="home_container text-white min-h-screen p-5 bg-gray-900 dark:bg-gray-900">
