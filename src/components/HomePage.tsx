@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const HomePage = () => {
-  const pdfPath = "/pdf/Arpit-FullStack-Resume.pdf";
+  const pdfPath = "/pdf/Arpit_MERN_Stack_Resume.pdf";
 
   return (
     <div className="home_container text-white min-h-screen p-5 bg-gray-900 dark:bg-gray-900">
@@ -13,14 +13,14 @@ const HomePage = () => {
         <header className="header w-full max-w-4xl text-center mb-10">
           <p className="title text-4xl font-bold text-gray-100 dark:text-white">{`Hi, I'm Arpit`}</p>
           <p className="subtitle text-4xl font-bold mt-2 text-gray-100 dark:text-white">
-            Full Stack Developer
+            MERN Stack Developer
           </p>
         </header>
 
         <section className="content_area p-2 flex sm:flex-row flex-col gap-3 bg-gray-700 dark:bg-slate-700 rounded-lg shadow-lg">
           <div className="custom_card project_card flex items-center ml-5">
             <p className="card_title text-lg sm:text-4xl font-semibold text-center sm:text-left text-gray-100 dark:text-white">
-              Arpit | Full Stack Developer | Problem Solver | Passionate Coder 🚀
+              Arpit | MERN Stack Developer | Problem Solver | Passionate Coder 
             </p>
           </div>
 

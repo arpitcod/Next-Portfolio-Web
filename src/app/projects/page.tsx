@@ -20,6 +20,15 @@ const page = () => {
   
   const projects: Projects[] = [
     {
+      title: "MERN-Next-Vepari-Grahak",
+      image: "https://avatars.githubusercontent.com/u/130605168?v=4",
+      description:
+        "Full-stack multi-vendor marketplace built with Next.js, TypeScript, Node.js & MongoDB enabling local merchants to create online shops and sell products.Features: Product browsing, cart management, Stripe payment integration, admin dashboard, and responsive UI with Redux state management.Tech Stack: Next.js, TypeScript, Express.js, MongoDB, Stripe API, Redux Toolkit, Tailwind CSS",
+      technologies: ["React", "Node.js", "Express", "MongoDB"],
+      repo_link: "https://github.com/arpitcod/MERN-Next-Vepari-Grahak",
+      // live_link: "https://github.com/arpitcod/MERN-Shoes-Bajar-App",
+    },
+    {
       title: "MERN-Shoes-Bajar-App",
       image: "https://avatars.githubusercontent.com/u/130605168?v=4",
       description:
